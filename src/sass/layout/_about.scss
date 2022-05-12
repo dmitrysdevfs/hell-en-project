@@ -1,0 +1,52 @@
+.about .section-title {
+    margin-bottom: var(--margin-bottom);
+}
+.about__name {
+    padding-bottom: 8px;
+    margin-bottom: var(--margin-bottom);
+font-weight: 800;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.08em;
+color: var(--add-textcolor);
+border-bottom: 1px solid var(--primary-text-color);
+}
+.about__img {
+    margin-bottom: var(--margin-bottom);
+}
+.attainment {
+    width: 253px;
+    margin: 0 auto;
+}
+.attainment__item {   
+font-weight: 600;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: 0.06em;
+color: var(--add-textcolor);
+}
+.attainment__item:not(:last-child) {
+    margin-bottom: var(--margin-bottom);
+}
+.attainment__text {
+display: inline-flex;
+align-items: center; 
+}
+.attainment__text::before {
+content: "";
+margin-right:9px;
+width: 17px;
+height: 14px;
+background-image: url('../images/galka.svg');
+background-size: 17px 14px;
+}
+
+
+.about__description, .about__certificate {
+    font-weight: 500;
+font-size: 12px;
+line-height: 1.67;
+}
+.about__certificate {
+    color: var(--accent-color);
+}

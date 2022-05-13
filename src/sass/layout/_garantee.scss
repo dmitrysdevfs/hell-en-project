@@ -1,0 +1,33 @@
+.guarantee-title {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.guarantee-container {
+  max-width: 320px;
+  background-color: #f1f1f1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 27px;
+}
+
+.guarantee-list__item {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 14px;
+    top: 0;
+    left: -7px;
+    background-size: contain;
+    background-image: url('../../src/images/icon-fire.svg');
+  }
+
+  &:not(:last-child) {
+    border-left: 1px dashed #b9b9b9;
+  }
+}

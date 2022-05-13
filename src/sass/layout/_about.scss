@@ -15,9 +15,20 @@
     margin-bottom: var(--margin-bottom);
 }
 .attainment {
+    position: relative;
     margin-left:  auto;
     margin-right: auto;
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 60px;
+}
+.attainment::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-color: var(--accent-color);
 }
 .attainment__item {  
     display: inline-flex;
@@ -42,14 +53,6 @@
 }
 .attainment__text {
     width: 100%; 
-}
-.line-accent { 
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.65;
-    color: var(--accent-color);
 }
 .about__description {
     font-weight: 500;
@@ -76,8 +79,8 @@
         font-size: 12px;
         line-height: 1.25;  
     }
-    .line-accent {
-        margin-bottom: 4px;
+    .attainment::after {
+        bottom: -45px;
     }
     .about__description {
         font-size: 10px;
@@ -109,9 +112,6 @@
         height: 20px;
         background-image: url('../images/galka.svg');
         background-size: 24px 20px;
-    }
-    .line-accent {
-        margin-bottom: 12px;
     }
     .about__wrapper-text {
         width: 668px;

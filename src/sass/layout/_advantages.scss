@@ -1,0 +1,33 @@
+.advantages-section__list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.advantages-section__item{
+    display: flex;
+    font-weight: 700;
+    font-size: var(--primary-font-size);
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+    color: var(--add-textcolor);
+    margin-bottom: 50px;
+  
+    
+    
+    
+    &::before{
+        content: url(../../src/images/svg/Rectangle2.svg);
+        background-image: url(../../src/images/svg/noun_FemaleStudent_25756361.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 40px;
+        margin-right: 30px;
+  
+    }
+}

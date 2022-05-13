@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,KAAK,CAAC;EACF,oBAAoB,CAAA,QAAC;EACrB,cAAc,CAAA,QAAC;EACf,eAAe,CAAA,QAAC;EAChB,qBAAqB,CAAA,wBAAC;EACtB,mBAAmB,CAAA,KAAC;EAEpB,YAAY,CAAA,6BAAC;CACd;;ACRH,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,WAAW;EACtB,IAAI,EAAE,aAAa;EACnB,QAAQ,EAAE,MAAM;CACjB;;ACXH,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,0BAA0B;EACvC,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,yBAAyB;CACjC;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACjB;;AAED,AAAA,EAAE;AACF,EAAE,CAAC;EACD,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;EAChB,YAAY,EAAE,CAAC;CAChB;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,IAAI;CACtB;;ACpCD,AAAA,UAAU,CAAC;EACT,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACpB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,UAAU,CAAC;IACT,KAAK,EAAE,KAAK;IACZ,WAAW,EAAE,IAAI;IACjB,YAAY,EAAE,IAAI;GACnB;;;AAGH,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,UAAU,CAAC;IACT,KAAK,EAAE,KAAK;IACZ,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;GACpB;;;AAGH,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AAAA,UAAU,CAAC;IACT,SAAS,EAAE,MAAM;IACjB,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;GACpB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_visually-hidden.scss",
+        "base/_common.scss",
+        "base/_container.scss",
+        "layout/_header.scss",
+        "layout/_hero.scss",
+        "layout/_advantages.scss",
+        "layout/_problems.scss",
+        "layout/_how-we-do.scss",
+        "layout/_program.scss",
+        "layout/_benefits.scss",
+        "layout/_about.scss",
+        "layout/_garantee.scss",
+        "layout/_reviews.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

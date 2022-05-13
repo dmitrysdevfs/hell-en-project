@@ -2,6 +2,20 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
-    letter-spacing: 0.03em;
-    color: var(--add-textcolor);
+    letter-spacing: 0.03em; 
+    @media screen and (min-width:768px) {
+    // однаковий відступ тільки на табульці, в моб та десктоп робила через додавання батьківського селектору
+    //  в своєму файлі
+        margin-bottom: 40px;
+        font-size: 26px;
+    }
+    @media screen and (min-width:1680px) {
+        font-size: 46px;
+    }
+}
+.section-title_thema-light {
+color: var(--add-textcolor);
+}
+.section-title_thema-dark {
+color: #ffffff;
 }

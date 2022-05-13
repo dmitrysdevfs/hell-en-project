@@ -79,6 +79,9 @@
         font-size: 12px;
         line-height: 1.25;  
     }
+    .attainment__item:not(:last-child) {
+    margin-bottom: 30px;
+}
     .attainment::after {
         bottom: -45px;
     }

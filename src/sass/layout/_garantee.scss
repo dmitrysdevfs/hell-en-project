@@ -15,12 +15,8 @@
   &::before {
     content: '';
     position: absolute;
-    height: 20px;
-    width: 14px;
-    top: 0;
-    left: -7px;
-    background-size: contain;
-    background-image: url('../../src/images/icon-fire.svg');
+    background-repeat: no-repeat;
+    background-image: url('../../src/images/icon-fire.svg'), linear-gradient(#f1f1ef, #f1f1ef);
   }
 
   &:not(:last-child) {
@@ -34,6 +30,17 @@
 }
 
 @media screen and (max-width: 1679px) {
+  .guarantee-list__item {
+    &::before {
+      content: '';
+      height: 30px;
+      width: 14px;
+      top: -5px;
+      left: -7px;
+      background-size: 14px 30px;
+    }
+  }
+
   .guarantee-list__text {
     font-size: 12px;
     line-height: 1.7;
@@ -87,5 +94,14 @@
 
   .guarantee-list__item {
     padding-left: 41px;
+
+    &::before {
+      content: '';
+      height: 40px;
+      width: 22px;
+      top: -6px;
+      left: -11px;
+      background-size: 22px 41px;
+    }
   }
 }

@@ -1,0 +1,30 @@
+
+    padding-bottom: 40px;
+}
+
+.advantages-section__item {
+    display: flex;
+    
+    &::before {
+        content: "";
+        background-image: url(../../src/images/svg/student.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.advantages-section__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.advantages-section__description {
+    font-weight: 700;
+    font-size: var(--primary-font-size);
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+    color: var(--add-textcolor);
+    max-width: 170px;
+    margin: auto;
+    margin-left: 12px;

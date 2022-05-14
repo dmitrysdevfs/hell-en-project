@@ -33,8 +33,8 @@ padding-bottom:60px;}
 
    }
 .container-wrap {background-color: #FFFFFF;
-    
- max-width: 1366px;   
+ height: 560px;   
+ max-width: 1648px;   
 position: relative;
 bottom:-32px;
 margin: 0 auto;
@@ -43,6 +43,7 @@ margin: 0 auto;
 .container-problems {max-width:100%;
 padding-top:80px;
 padding-bottom: 302px;
+height: 580px;
 }
 .card-set {display:flex;
     flex-wrap: wrap;
@@ -66,7 +67,7 @@ ol {
     padding: 30px;
     margin-bottom: 15px;
     color: #111518;
-    ;
+    
     }
     li::before {
 

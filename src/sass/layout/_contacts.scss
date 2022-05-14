@@ -3,14 +3,15 @@
 }
 .contacts-title{
     font-family: var(--primary-font-family);
+    color: #FFFFFF;
     font-weight: 800;
     font-size: 14px;
     line-height: 1.3;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.text-accent {
-    color: var(--accent-color);
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contacts-description {
     font-family: var(--primary-font-family);
@@ -22,6 +23,9 @@
     letter-spacing: 0.08em;
     color: #FFFFFF;
     margin-top: 24px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contacts-form {
     margin-top: 40px;
@@ -56,56 +60,42 @@
 }
 .contacts-btn {
     margin-top: 40px;
-}
-// btn-component створив тимчасово, потім заміню на компонент, який буде
-.btn-component {
-    width: 100%;
-    height: 48px;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    text-align: center;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 }
 // 0px +767px
 @media screen and (max-width: 767px) {
     .contacts {
-        // background-image: url(/images/contact-bg-img-mob.jpg);
+        background-image: url(/images/contact-bg-img-mob.png);
+        background-size: cover;
         height: 463px;
         background-color: var(--add-textcolor);
         background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url(/images/contact-bg-img-mob@2x.jpg);
+                    background-image: url(/images/contact-bg-img-mob@2x.png);
                 }
     }
 }
 //768px +
 @media screen and (min-width: 768px) {
     .contacts {
-        // background-image: url(/images/contact-bg-img-tab.jpg);
+        background-image: url(/images/contact-bg-img-tab.png);
         height: 459px;
         background-color: var(--add-textcolor);
         background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url(/images/contact-bg-img-tab@2x.jpg);
+                    background-image: url(/images/contact-bg-img-tab@2x.png);
                 }
     }
     .contacts-title{
         width: 688px;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 26px;
     }
     .contacts-description {
-       margin-left: auto;
-       margin-right: auto;
         font-size: 14px;
         line-height: 1.21;
         margin-top: 40px;
@@ -127,7 +117,7 @@
 //1680px +
 @media screen and (min-width: 1680px) {
     .contacts {
-        // background-image: url(/images/contact-bg-img.jpg);
+        background-image: url(/images/contact-bg-img.png);
         padding-top: 80px;
         height: 794px;
         background-color: var(--add-textcolor);
@@ -135,7 +125,7 @@
         @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url(/images/contact-bg-img@2x.jpg);
+                    background-image: url(/images/contact-bg-img@2x.png);
                 }
     }
     .contacts-title{

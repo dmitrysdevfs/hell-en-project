@@ -1,0 +1,104 @@
+.benefits-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 136%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+    max-width: 180px;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+        max-width: 100%;
+        font-size: 26px;
+        line-height: 130%;
+        padding-bottom: 40px;
+    }
+}
+
+.benefits-block {
+    background: #FFFFFF;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 60px 20px 20px;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: 768px) {
+        padding: 71px 32px 40px 92px;
+
+    }
+
+    @media screen and (min-width: 1300px) {
+        padding: 101px 32px 60px 140px;
+        margin-top: -330px;
+    }
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px;
+
+    counter-reset: section;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 81px;
+    }
+
+    li {
+        list-style: none;
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        color: #111518;
+
+        position: relative;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1300px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &::before {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 164.9%;
+            letter-spacing: 0.08em;
+
+            color: #FF6B09;
+            position: absolute;
+            counter-increment: section;
+            content: "— " counter(section) " ";
+            top: -30px;
+            color: #FF6B09;
+
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+                top: -28px;
+            }
+
+            @media screen and (min-width: 1300px) {
+                font-size: 20px;
+                line-height: 24px;
+                top: -41px;
+            }
+        }
+    }
+}

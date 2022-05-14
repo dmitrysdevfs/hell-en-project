@@ -12,8 +12,13 @@ background-color:black;
     
     
 }
-.container-problems {padding-top: 80px;
-    padding-bottom:302px;
+.container-wrap {
+ @media screen and (min-width: 768px)
+ 
+     {padding-top: 80px;
+        padding-left: 92px;
+        padding-right: 40px;
+    padding-bottom:32px;}
    
     
    }
@@ -21,8 +26,8 @@ background-color:black;
 position: relative;
 bottom:auto;
 left: auto;
-padding-top: 60px;
-padding-bottom: 60px;}
+
+}
 /*
 .card-set {display: inline-flex;
     flex-wrap: wrap;
@@ -45,8 +50,9 @@ ol {
     color:violet;
     }
     li::before {
-    content: counter(section);
+
     counter-increment: section;
+    content:"-" counter(section) "";
     display: inline-block;
     position: absolute;
     left: -75px;

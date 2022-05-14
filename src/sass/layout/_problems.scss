@@ -1,8 +1,10 @@
 .problems {
 
-background-color: #FFFFFF;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg_probl.svg");
-    background-repeat: no-repeat; background-position: center; background-size:cover;
+
+background-image: linear-gradient(to bottom, 
+ #111518 560px, #FFFFFF  132px
+ )
+    
 
 }
 .problems-title {font-family:'Monserrat';
@@ -10,11 +12,16 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     font-weight: 800;
     line-height: 1.30;
     letter-spacing: 0.03em;
-   display: length; 
+    padding-left: 16px;
+    padding-right:  798px;
+   color: #FFFFFF;
     
     
     
 }
+.accent {color: var(--accent-color);
+    }
+
 .container-wrap {
  @media screen and (min-width: 768px)
  
@@ -22,33 +29,46 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         padding-left: 92px;
         padding-right:112px;
     padding-bottom: 40px;}
-   
+     }
+     .container-wrap {
     @media screen and (min-width: 480px)
-    {padding: 20px 20px 20px 24px;}
-    @media screen and (min-width: 1366px)
+    {padding: 20px 20px 20px 24px;}}
+    .container-wrap {
+    @media screen and (min-width: 1680px)
     {padding-top: 60px;
     padding-left:140px; 
 padding-right:32px ;
 padding-bottom:60px;}
+    }
+   
+.container-wrap {background-color: #FFFFFF;  
 
-   }
-.container-wrap {background-color: #FFFFFF;
- height: 560px;   
- max-width: 1648px;   
 position: relative;
-bottom:-32px;
-margin: 0 auto;
+z-index: 2;
+box-shadow: -5px 8px 26px
+rgba(0, 0, 0, 0.04); 
 
 }
-.container-problems {max-width:100%;
+.container-problems {width:100%;
 padding-top:80px;
-padding-bottom: 302px;
-height: 580px;
+padding: left 16px;
+height: 692px;
+
+
 }
+.container-problems {
+@media screen and (min-width: 1680px)
+    {width: 100%;
+        max-width: 1680px;
+    padding-left:16px; 
+padding-right:16px ;
+padding-bottom: 20px;
+}}
+
 .card-set {display:flex;
     flex-wrap: wrap;
-    margin-left:-10px;
-    margin-top:-10px;  
+    margin-left:-30px;
+    margin-top:-30px;  
     } 
     
 .list-problems-item {
@@ -56,18 +76,21 @@ height: 580px;
     {flex-basis: calc((100% - 30px) / 3);
     position: relative;
 margin-bottom: 72px;
-}
-} 
+}}
+
 ol {
     counter-reset: section;
     }
     .list-problems-item {
     list-style-type: none;
     font-size: 20px ;
-    padding: 30px;
+    justify-content: space-between;
     margin-bottom: 15px;
     color: #111518;
-    
+    padding-bottom: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: 700;
     }
     li::before {
 
@@ -82,7 +105,8 @@ ol {
     height: 25px;
     text-align: center;
     color: #FF6B09;
+    margin-bottom: 8px;
     
-   
+  
    
     }

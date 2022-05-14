@@ -141,13 +141,9 @@
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0159"
                 d="M30.476 4.793v-4.192h-29.968v30.538h29.968v-4.192"></path>
         </symbol>
-        <symbol id="icon-menu" viewBox="0 0 48 32">
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714"
-                d="M0 2.286h46.857"></path>
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714"
-                d="M0 16h46.857"></path>
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714"
-                d="M0 29.714h46.857"></path>
+        <symbol id="icon-menu" viewBox="0 0 32 32"> 
+            <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path> 
+        </symbol>
         </symbol>
         <symbol id="icon-fire" viewBox="0 0 26 32">
             <path fill="#ff6b09" style="fill: var(--color2, #ff6b09)"

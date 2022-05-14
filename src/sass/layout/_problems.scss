@@ -10,7 +10,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     font-weight: 800;
     line-height: 1.30;
     letter-spacing: 0.03em;
-   display: center;
+   display: length; 
     
     
     
@@ -32,14 +32,18 @@ padding-right:32px ;
 padding-bottom:60px;}
 
    }
-.container-wrap {background-color: aqua;
- max-width: 1648px;   
+.container-wrap {background-color: #FFFFFF;
+    
+ max-width: 1366px;   
 position: relative;
-bottom:auto;
+bottom:-32px;
 margin: 0 auto;
 
 }
-
+.container-problems {max-width:100%;
+padding-top:80px;
+padding-bottom: 302px;
+}
 .card-set {display:flex;
     flex-wrap: wrap;
     margin-left:-10px;
@@ -58,10 +62,11 @@ ol {
     }
     .list-problems-item {
     list-style-type: none;
-    font-size: 1.5 rem;
+    font-size: 20px ;
     padding: 30px;
     margin-bottom: 15px;
-    color:violet;
+    color: #111518;
+    ;
     }
     li::before {
 
@@ -71,11 +76,12 @@ ol {
     position: absolute;
     top: -25px;
    
-    font-size: 2rem;
+    font-size: 20px;
     width: 25px;
     height: 25px;
     text-align: center;
-    color:coral;
+    color: #FF6B09;
+    
    
    
     }

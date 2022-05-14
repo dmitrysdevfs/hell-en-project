@@ -4,10 +4,24 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
-// Секція Programm of Pobelianska Kateryna
 
-@import './layout/benefits';
+@import './components/text-accent';
+@import './components/btn';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/problems';
+@import './layout/how-we-do';
 @import './layout/program';
-
+@import './layout/benefits';
+@import './layout/about';
+@import './layout/garantee';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';

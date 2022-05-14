@@ -49,22 +49,14 @@
 }
 
 .__h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
     text-align: center;
-    line-height: 130%;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 40px;
 //     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
-        font-weight: 800;
-        font-size: 46px;
         text-align: left;
-//         padding-bottom: 80px;
+     //  padding-bottom: 80px;
     }
 }
 

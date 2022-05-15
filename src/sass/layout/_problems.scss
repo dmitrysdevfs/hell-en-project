@@ -2,7 +2,7 @@
 
 
 background-image: linear-gradient(to bottom, 
- #111518 560px, #FFFFFF  132px
+ #111518 80%, #FFFFFF  80%
  )
     
 
@@ -54,7 +54,8 @@ background-image: linear-gradient(to bottom,
     position: relative;
     z-index: 2;
     box-shadow: -5px 8px 26px
-    rgba(0, 0, 0, 0.04); }
+    rgba(0, 0, 0, 0.04); 
+}
      }
     
     .container-wrap {
@@ -128,7 +129,6 @@ padding-right: 192px;
 max-width: 100%;
 font-size: 20px ;
 line-height: 1.2;
-justify-content: space-between;
 }}
 
 .list-problems-item{

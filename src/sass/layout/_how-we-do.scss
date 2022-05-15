@@ -146,12 +146,13 @@ color:var(--add-textcolor);
   .hwd-list {
     margin-top: 80px;
   }
-  
   .hwd-list__item {
     flex-basis: calc((100% - 96px) / 3);
-    // margin-top: 32px;
     padding-top: 90px;
     min-height: 492px;
+    &:not(:nth-child(-n+3)) {
+      margin-top: 32px;
+      }
   }
   .hwd-list__title {
     font-size: 20px;
@@ -165,6 +166,4 @@ color:var(--add-textcolor);
     width: 365px;
     font-size: 18px;
   }
-
-  
 }

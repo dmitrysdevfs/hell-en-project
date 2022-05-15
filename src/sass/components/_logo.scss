@@ -28,6 +28,7 @@
 
 .mobile-menu-logo__top-part {
     position: absolute;
+    top: 24px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -39,8 +40,7 @@
 
 .mobile-menu-logo__bottom-part {
     position: absolute;
-    top: 48px;
-    left: 20px;
+    top: 58px;
     padding-top: 4px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -64,12 +64,10 @@
     .mobile-menu-logo__top-part {
         font-size: 26px;
         top: 40px;
-        left: 32px;
     }
 
     .mobile-menu-logo__bottom-part {
-        top: 71px;
-        left: 34px;
+        top: 75px;
     }
 }
 

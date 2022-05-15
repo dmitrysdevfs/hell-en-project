@@ -2,23 +2,90 @@
     padding: 40px 0px;
     background-color: #ffff;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+    @media screen and (min-width: 768px){
+       padding-bottom: 80px; 
+    }
+}
+
+.svg-element {
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 60px;
+    min-height: 60px;
+    @media screen and (min-width: 1680px){
+        min-width: 100px;
+        min-height: 102px;
+    }
+
+}
+
+.svg-element--first{
+    &::before {
+            content: "";
+            @extend .svg-element;
+            background-image: url(../../src/images/svg/student.svg);
+            @media screen and (min-width: 1680px){
+            background-image: url(../../src/images/svg/student_big.svg);
+            }
+    
+        }
+}
+
+.svg-element--second{
+    &::before {
+            content: "";
+            @extend .svg-element;
+            background-image: url(../../src/images/svg/study.svg);
+            @media screen and (min-width: 1680px) {
+            background-image: url(../../src/images/svg/study_big.svg);
+            }
+        }
+}
+
+.svg-element--tree{
+    &::before {
+            content: "";
+            @extend .svg-element;
+            background-image: url(../../src/images/svg/dolar.svg);
+            @media screen and (min-width: 1680px) {
+            background-image: url(../../src/images/svg/dolar_big.svg);
+            }
+        }
+}
+
+.advantages-section__list{
+    @media screen and (min-width: 768px){
+    display: flex;
+    
+    margin-left: -21px;
+    }
+    @media screen and (min-width: 1680px){
+     margin-left: -240px;  
+     
+    }
+    
 }
 
 .advantages-section__item {
     display: flex;
+    margin-left: 21px;
     
-    &::before {
-        content: "";
-        background-image: url(../../src/images/svg/student.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 60px;
-        height: 60px;
+    flex-basis: calc(100% / 3 - 21px);
+    @media screen and (min-width: 1680px){
+    margin-left: 240px;
+   
+    flex-basis: calc(100% / 3 - 240px);
     }
+    
 }
 
+
+
 .advantages-section__item:not(:last-child) {
+    @media screen and (max-width: 767px){
     margin-bottom: 24px;
+    }
+    
 }
 
 .advantages-section__description {
@@ -30,5 +97,10 @@
     max-width: 170px;
     margin: auto;
     margin-left: 12px;
-
+    @media screen and (min-width: 1680px){
+        font-size: 20px;
+        line-height: 1.65;
+        margin-left: -13px;
+        max-width: none;
+    }
 }

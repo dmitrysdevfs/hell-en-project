@@ -7,4 +7,4 @@ $(document).ready(function(){$(".slider").slick({speed:750,infinite:!1,initialSl
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu"),require("./js/script");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD","./js/script":"L4bL"}]},{},["Focm"], null)
-//# sourceMappingURL=/hell-en-project/src.1084a250.js.map
+//# sourceMappingURL=/hell-en-project/src.9375188a.js.map

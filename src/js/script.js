@@ -12,5 +12,7 @@ $(document).ready(function () {
     $('.slider-pagination').slick({
         infinite:false,
         asNavFor: ".slider",
+        variableWidth: true,
+        slidesToShow: 3
     });
 });

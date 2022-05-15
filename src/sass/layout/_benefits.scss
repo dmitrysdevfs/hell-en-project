@@ -32,17 +32,20 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;
 
-    counter-reset: section;
+    counter-reset: section;}
 
-    @media screen and (min-width: 768px) {
+   
+    @media screen and (min-width: 768px) 
+    {.benefits-list {
+
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 32px;
-    }
+    }}
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1300px) { .benefits-list {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 81px;
-    }
+    }}
 
     li {
         list-style: none;
@@ -55,14 +58,11 @@
         letter-spacing: 0.08em;
         color: #111518;
 
-        position: relative;
+        position: relative;}
 
-        @media screen and (min-width: 768px) {}
+        
 
-        @media screen and (min-width: 1300px) {
-            font-size: 20px;
-            line-height: 24px;
-        }
+       
 
         &::before {
             font-family: 'Montserrat', sans-serif;

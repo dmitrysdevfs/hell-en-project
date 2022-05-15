@@ -107,7 +107,7 @@ padding-right: 15px;}
 
     @media screen and (min-width: 480px)
    
-        {.list-problems-item{
+        {.list-problems-item {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 60px;

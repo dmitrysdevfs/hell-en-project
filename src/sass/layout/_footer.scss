@@ -1,0 +1,123 @@
+.footer-container {
+  display: flex;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: #111518;
+}
+
+.rights {
+  width: 100%;
+  text-align: center;
+  background: #111518;
+}
+
+@media screen and (max-width: 1679px) {
+  .footer-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .phone-icon {
+    margin-right: 8px;
+  }
+
+  .rights {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .logo-footer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .phone {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .phone-icon {
+    width: 20px;
+    height: 19px;
+  }
+
+  .insta {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    align-items: center;
+  }
+
+  .phone {
+    font-size: 20px;
+    margin-right: 24px;
+    margin-left: auto;
+  }
+
+  .phone-icon {
+    width: 24px;
+    height: 23px;
+  }
+
+  .insta {
+    position: relative;
+    padding-left: 24px;
+    margin-right: 0px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #b9b9b9;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .footer-container {
+    padding-top: 80px;
+    padding-bottom: 78px;
+  }
+
+  .phone {
+    font-size: 30px;
+    margin-right: 16px;
+  }
+
+  .phone-icon {
+    width: 30px;
+    height: 29px;
+    margin-right: 16px;
+  }
+
+  .insta {
+    margin-right: 580px;
+  }
+
+  .rights {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+}

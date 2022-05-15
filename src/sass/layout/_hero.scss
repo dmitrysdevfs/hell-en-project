@@ -1,9 +1,12 @@
-.hero-section  {
 
-     max-width: 100%;
+
+
+.hero-section  {
+     
+    max-width: 100%;
     padding-bottom: 60px;
-    background-image: url(../../src/images/hero_img/bg/hero-bg__mob.png);
-    background-color: #FFFFFF;
+    background-image:url(../../src/images/hero_img/bg/hero-bg__mob.png);
+    background-color: #FFF;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
    
     background-position: right 0px bottom -50px;
@@ -17,10 +20,28 @@
     }
     @media screen and (min-width: 768px){
     background-image: url(../../src/images/hero_img/bg/hero-bg__tab.png);
-    background-position: right -70px bottom -50px;
+    background-position: right 10px bottom -50px;
+    padding-top: 80px;
+
+    }
+    @media screen and (min-width: 1680px){
+    background-image: url(../../src/images/hero_img/bg/hero-bg__desk.png);
+    }
+    .container{
+        @media screen and (min-width: 768px){
+        display: flex; 
+        justify-content: space-between;
+        }
     }
    
    
+}
+
+.hero-secton__firs-box{
+    @media screen and (min-width: 768px){
+
+        padding-left: 10px;
+    }
 }
 
 .hero-section__title {
@@ -32,6 +53,14 @@
     text-align: left;
     max-width: 280px;
     margin-bottom: 8px;
+    @media screen and (min-width: 768px){
+       font-size: 26px; 
+       max-width: 332px;
+    }
+    @media screen and (min-width: 1680px){
+       font-size: 58px; 
+       max-width: 560px;
+    }
 }
 
 .hero-section__promotional-description {
@@ -43,16 +72,33 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+       @media screen and (min-width: 768px){
+          margin-bottom: 48px;
+    }
+       @media screen and (min-width: 1680px){
+          font-size: 20px; 
+          line-height: 1.65;
+          text-shadow: none;
+          display: block;
+          
+          
+       }
+    
 }
 
 .hero-section__promotional-description--part-two {
     font-weight: 700;
     color: var(--add-textcolor);
+    @media screen and (min-width: 1680px){
+        
+    }
 }
 
 .hero-section__promotional-description--part-three {
     @extend .hero-section__promotional-description--part-two;
+    @media screen and (max-width: 1679px){
     color: var(--accent-color);
+    }
 }
 
 .hero-section__image {

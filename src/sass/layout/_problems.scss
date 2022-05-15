@@ -27,6 +27,39 @@ background-image: linear-gradient(to bottom,
     padding-right: 168px;
 
 }}
+@media screen and (min-width: 480px)
+{.container-problems {
+ 
+     
+        width: 480px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }} 
+.container-problems {
+height: 692px;
+
+
+}
+@media screen and (min-width: 768px) 
+{.container-problems 
+    
+         {
+            width: 768px;
+            max-width: 100%;
+            padding-left: 32px;
+            padding-right: 168px;
+        }}
+        @media screen and (min-width: 1680px)
+{.container-problems {
+
+    width: 100%;
+        max-width: 1680px;
+    padding-left:16px; 
+padding-right:168px ;
+padding-bottom: 20px;
+}}
 @media screen and (min-width: 1680px) {
    .problems-title 
     {padding-left: 16px;
@@ -75,37 +108,7 @@ box-shadow: -5px 8px 26px
 rgba(0, 0, 0, 0.04); }
     }
    
-    @media screen and (min-width: 480px)
-{.container-problems {
- 
-     
-        width: 480px;
-        max-width: 100%;
-        
-    }} 
-.container-problems {
-height: 692px;
-
-
-}
-@media screen and (min-width: 768px) 
-{.container-problems 
-    
-         {
-            width: 768px;
-            max-width: 100%;
-            padding-left: 32px;
-            padding-right: 168px;
-        }}
-        @media screen and (min-width: 1680px)
-{.container-problems {
-
-    width: 1680px;
-        max-width: 100%;
-    padding-left:16px; 
-padding-right:168px ;
-padding-bottom: 20px;
-}}
+   
 @media screen and (min-width: 768px)
 {.card-set 
     {display:flex;

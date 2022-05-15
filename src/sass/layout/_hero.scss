@@ -24,7 +24,7 @@
     }
     @media screen and (min-width: 768px){
     background-image: url(../../src/images/hero_img/bg/hero-bg__tab.png);
-    background-position: right 10px bottom -50px;
+    background-position: right 0px bottom -30px;
     padding-top: 80px;
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -34,6 +34,7 @@
     }
     @media screen and (min-width: 1680px){
     background-image: url(../../src/images/hero_img/bg/hero-bg__desk.png);
+    background-position: right 10px bottom 0px;
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {

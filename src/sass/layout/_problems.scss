@@ -1,0 +1,181 @@
+.problems {
+
+
+background-image: linear-gradient(to bottom, 
+ #111518 80%, #FFFFFF 20%
+ )
+    
+
+}
+.problems-title {font-family:'Monserrat';
+    
+    color: #FFFFFF;}
+
+    @media screen and (min-width: 480px)
+    {.problems-title 
+        
+        {padding: 20px 24px;
+            font-size: 24px;
+            
+           }}
+    
+           @media screen and (min-width: 768px)
+   {.problems-title {
+   
+   padding-left:32px;
+    padding-top: 40px;
+    padding-right: 168px;
+
+}}
+.container-problems {padding-left: 15px;
+padding-right: 15px;}
+@media screen and (min-width: 480px)
+{.container-problems {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }} 
+
+
+
+
+@media screen and (min-width: 768px) 
+{.container-problems 
+         {
+            width: 768px;   
+        }}
+        @media screen and (min-width: 1680px)
+{.container-problems {
+
+    width:1680px;  
+}}
+@media screen and (min-width: 1680px) {
+   .problems-title 
+    {padding-left: 16px;
+        padding-right:  198px;
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.30;
+        letter-spacing: 0.03em}
+}
+.accent {color: var(--accent-color);
+    }
+    .container-wrap {padding-left: 32px ;
+        padding-right: 32px;}
+        @media screen and (min-width: 480px){
+        .container-wrap {
+            width:450px;
+            margin-left:auto ;
+            margin-right: auto;
+                position: relative;
+                bottom:-32px;
+                box-shadow: -5px 8px 26px
+                rgba(0, 0, 0, 0.04); }}
+                
+                @media screen and (min-width: 768px)
+    {.container-wrap 
+     
+     
+         {padding-top: 40px;
+            padding-left: 92px;
+            padding-right:112px;
+        padding-bottom: 40px;
+        position: relative;
+       bottom: -32px;
+        box-shadow: -5px 8px 26px
+        rgba(0, 0, 0, 0.04); 
+    }
+    }
+    @media screen and (min-width: 1680px)
+        {.container-wrap 
+       
+        {padding-top: 60px;
+        padding-left:140px; 
+    padding-right:32px ;
+    padding-bottom:-60px;
+    position: absolute;
+    
+    box-shadow: -5px 8px 26px
+    rgba(0, 0, 0, 0.04); }
+        }
+       
+    @media screen and (max-width: 767px)
+{.list-problems-item:not(:last-child) {margin-bottom: 20px;}}
+
+    @media screen and (min-width: 768px)
+
+
+    {.card-set 
+        {display:flex;
+        flex-wrap: wrap;
+        margin-left:-10px;
+        margin-top:-10px;  }}
+        @media screen and (min-width: 768px)
+        {.list-problems-item 
+           
+           {width: calc(100% - 2 * 10px)/2;
+           
+           font-size: 14px;
+           line-height: 1.43;
+        }} 
+        @media screen and (min-width: 1680px)
+
+
+        {.card-set 
+            {display:flex;
+            flex-wrap: wrap;
+            margin-left:-60px;
+            margin-top:-60px;  }}
+        @media screen and (min-width: 1680px)
+        {.list-problems-item 
+           
+           {width: calc(100% - 6 * 10px)/3;
+           font-size:20px;
+           line-height: 1.4;
+        }} 
+
+    ol {
+        counter-reset: section;
+        }
+        .list-problems-item {
+        list-style-type: none;
+        color: #111518;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        } 
+        li::before {
+
+            counter-increment: section;
+            content:"--" counter(section) "";
+            
+            position: absolute;
+        
+           top: -30px;
+            font-size: 20px;
+            
+            
+            color: #FF6B09;
+            margin-bottom: 8px;
+            
+          
+           
+            }
+            @media screen and (min-width: 480px)  
+        {li::before {
+            counter-increment: section;
+            content:"-" counter(section) "";
+            position: absolute;
+            top: -30px;}
+        }
+        @media screen and (min-width: 768px)
+        {li::before 
+            
+                
+            
+        {
+            counter-increment: section;
+            content:"-" counter(section) "";
+            position: absolute;
+            top: -28px;}
+        }

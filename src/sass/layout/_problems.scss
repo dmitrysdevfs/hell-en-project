@@ -2,7 +2,7 @@
 
 
 background-image: linear-gradient(to bottom, 
- #111518 80%, #FFFFFF  80%
+ #111518 80%, #FFFFFF 20%
  )
     
 
@@ -16,7 +16,7 @@ background-image: linear-gradient(to bottom,
         
         {padding: 20px 24px;
             font-size: 24px;
-            justify-content: center;
+            
            }}
     
            @media screen and (min-width: 768px)
@@ -27,38 +27,28 @@ background-image: linear-gradient(to bottom,
     padding-right: 168px;
 
 }}
+.container-problems {padding-left: 15px;
+padding-right: 15px;}
 @media screen and (min-width: 480px)
 {.container-problems {
- 
-     
         width: 480px;
-        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         
     }} 
-.container-problems {
-height: 692px;
 
 
-}
+
+
 @media screen and (min-width: 768px) 
 {.container-problems 
-    
          {
-            width: 768px;
-            max-width: 100%;
-            padding-left: 32px;
-            padding-right: 168px;
+            width: 768px;   
         }}
         @media screen and (min-width: 1680px)
 {.container-problems {
 
-    width: 100%;
-        max-width: 1680px;
-    padding-left:16px; 
-padding-right:168px ;
-padding-bottom: 20px;
+    width:1680px;  
 }}
 @media screen and (min-width: 1680px) {
    .problems-title 
@@ -71,132 +61,108 @@ padding-bottom: 20px;
 }
 .accent {color: var(--accent-color);
     }
-    @media screen and (min-width: 480px){
-    .container-wrap {
-        
-        padding: 24px 20px 23px 32px;
-           
-            position: relative;
-            z-index: 2;
-            box-shadow: -5px 8px 26px
-            rgba(0, 0, 0, 0.04); }}
-            
-            @media screen and (min-width: 768px)
-{.container-wrap 
- 
- 
-     {padding-top: 40px;
-        padding-left: 92px;
-        padding-right:112px;
-    padding-bottom: 40px;
-    position: relative;
-    z-index: 2;
-    box-shadow: -5px 8px 26px
-    rgba(0, 0, 0, 0.04); 
-}
-}
-@media screen and (min-width: 1680px)
+    .container-wrap {padding-left: 32px ;
+        padding-right: 32px;}
+        @media screen and (min-width: 480px){
+        .container-wrap {
+            width:450px;
+            margin-left:auto ;
+            margin-right: auto;
+                position: relative;
+                bottom:-32px;
+                
+                
+                box-shadow: -5px 8px 26px
+                rgba(0, 0, 0, 0.04); }}
+                
+                @media screen and (min-width: 768px)
     {.container-wrap 
-   
-    {padding-top: 60px;
-    padding-left:140px; 
-padding-right:32px ;
-padding-bottom:60px;
-position: relative;
-z-index: 2;
-box-shadow: -5px 8px 26px
-rgba(0, 0, 0, 0.04); }
-    }
-   
-   
-@media screen and (min-width: 768px)
-{.card-set 
-    {display:flex;
-    flex-wrap: wrap;
-    margin-left:-162px;
-    margin-top:-81px;  
-    } }
-    @media screen and (min-width: 1680px)  
-{.card-set 
-  {display:flex;
-    flex-wrap: wrap;
-    margin-left:0;
-    margin-top:0;  
-    } }
-    @media screen and (min-width: 768px)
-    {.list-problems-item 
-       
-       {flex-basis: calc(100%  / 2);
-       position: relative;
-       justify-content: space-between;
-       font-size: 14px;
-       line-height: 1.43;
-    }} 
-    @media screen and (min-width: 1680px)   
-{.list-problems-item 
      
-    {flex-basis: calc(100%  / 3);
-    position: relative;
-padding-left:140px ;
-padding-right: 192px;
-max-width: 100%;
-font-size: 20px ;
-line-height: 1.2;
-}}
-@media screen and (min-width: 480px)
-{.list-problems-item
-
-{margin-bottom: 45px;
-font-size: 14px;
-line-height: 1.71;
-}}
-ol {
-    counter-reset: section;
+     
+         {padding-top: 40px;
+            padding-left: 92px;
+            padding-right:112px;
+        padding-bottom: 40px;
+        position: relative;
+       bottom: -32px;
+        box-shadow: -5px 8px 26px
+        rgba(0, 0, 0, 0.04); 
     }
-    .list-problems-item {
-    list-style-type: none;
-    margin-bottom: 15px;
-    color: #111518;
-    padding-bottom: 40px;
-    letter-spacing: 0.08em;
-    font-weight: 700;
     }
-    li::before {
-
-    counter-increment: section;
-    content:"--" counter(section) "";
-    
+    @media screen and (min-width: 1680px)
+        {.container-wrap 
+       
+        {padding-top: 60px;
+        padding-left:140px; 
+    padding-right:32px ;
+    padding-bottom:-60px;
     position: absolute;
+    
+    box-shadow: -5px 8px 26px
+    rgba(0, 0, 0, 0.04); }
+        }
+       
+    @media screen and (max-width: 767px)
+{.list-problems-item:not(:last-child) {margin-bottom: 20px;}}
 
-   
-    font-size: 20px;
-    
-    
-    color: #FF6B09;
-    margin-bottom: 8px;
-    
-  
-   
-    }
-    @media screen and (min-width: 480px)  
-{li::before {
-   
+    @media screen and (min-width: 768px)
+
+
+    {.card-set 
+        {display:flex;
+        flex-wrap: wrap;
+        margin-left:-10px;
+        margin-top:-10px;  }}
+        @media screen and (min-width: 768px)
+        {.list-problems-item 
+           
+           {width: calc(100% -2 * 10px)/2;
+           
+           font-size: 14px;
+           line-height: 1.43;
+        }} 
+
+    ol {
+        counter-reset: section;
+        }
+        .list-problems-item {
+        list-style-type: none;
+        color: #111518;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        } 
+        li::before {
+
+            counter-increment: section;
+            content:"--" counter(section) "";
+            
+            position: absolute;
         
-    
-
-    counter-increment: section;
-    content:"-" counter(section) "";
-    position: absolute;
-    top: -30px;}
-}
-@media screen and (min-width: 768px)
-{li::before 
-    
-        
-    
-{
-    counter-increment: section;
-    content:"-" counter(section) "";
-    position: absolute;
-    top: -28px;}
-}
+           top: -30px;
+            font-size: 20px;
+            
+            
+            color: #FF6B09;
+            margin-bottom: 8px;
+            
+          
+           
+            }
+            @media screen and (min-width: 480px)  
+        {li::before {
+            counter-increment: section;
+            content:"-" counter(section) "";
+            position: absolute;
+            top: -30px;}
+        }
+        @media screen and (min-width: 768px)
+        {li::before 
+            
+                
+            
+        {
+            counter-increment: section;
+            content:"-" counter(section) "";
+            position: absolute;
+            top: -28px;}
+        }

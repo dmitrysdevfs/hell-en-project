@@ -1,6 +1,6 @@
 .problems {max-width: 100%;
 background-image: linear-gradient(to bottom, 
- #111518 80%, #FFFFFF 20%
+ #111518 545px, #FFFFFF 157px
  )
     
 
@@ -60,7 +60,8 @@ padding-right: 15px;}
 .accent {color: var(--accent-color);
     }
     .container-wrap {padding-left: 32px ;
-        padding-right: 32px;}
+        padding-right: 32px;
+    height: 354px;}
         @media screen and (min-width: 480px){
         .container-wrap {
             width:480px;
@@ -72,7 +73,6 @@ padding-right: 15px;}
                 rgba(0, 0, 0, 0.04);
                 z-index: 2;
              }}
-                
                 @media screen and (min-width: 768px)
     {.container-wrap 
      
@@ -95,45 +95,37 @@ padding-right: 15px;}
     padding-right:32px ;
     padding-bottom:-60px;
     position: absolute;
+    bottom: 0;
+    left: 0;
+    height:354px;
     
     box-shadow: -5px 8px 26px
     rgba(0, 0, 0, 0.04); }
         }
        
-    @media screen and (max-width: 767px)
-{.list-problems-item:not(:last-child) {margin-bottom: 20px;}}
+  
 
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 480px)
+   
+        {.list-problems-item{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 60px;
+        
+            counter-reset: section;
+        } }
+        @media screen and (min-width: 768px) {.list-problems-item {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 32px;
+        }}
+    
+        @media screen and (min-width: 1680px) {.list-problems-item {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 81px;
+        }}
 
 
-    {.card-set 
-        {display:flex;
-        flex-wrap: wrap;
-        margin-left:-10px;
-        margin-top:-10px;  }}
-        @media screen and (min-width: 768px)
-        {.list-problems-item 
-           
-           {width: calc(100% - 2 * 10px)/2;
-           
-           font-size: 14px;
-           line-height: 1.43;
-        }} 
-        @media screen and (min-width: 1680px)
-
-
-        {.card-set 
-            {display:flex;
-            flex-wrap: wrap;
-            margin-left:-60px;
-            margin-top:-60px;  }}
-        @media screen and (min-width: 1680px)
-        {.list-problems-item 
-           
-           {width: calc(100% - 6 * 10px)/3;
-           font-size:20px;
-           line-height: 1.4;
-        }} 
+       
 
     ol {
         counter-reset: section;
@@ -151,10 +143,7 @@ padding-right: 15px;}
             
             position: absolute;
         
-           top: -30px;
-            font-size: 20px;
-            
-            
+    
             color: #FF6B09;
             margin-bottom: 8px;
             
@@ -174,8 +163,12 @@ padding-right: 15px;}
                 
             
         {
-            counter-increment: section;
-            content:"-" counter(section) "";
-            position: absolute;
+            font-size: 14px;
+            line-height: 20px;
             top: -28px;}
         }
+        @media screen and (min-width: 1680px)
+        {li::before { 
+        font-size: 20px;
+                line-height: 24px;
+                top: -41px;}}

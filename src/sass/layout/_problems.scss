@@ -1,10 +1,19 @@
 .problems {max-width: 100%;
 background-image: linear-gradient(to bottom, 
- #111518 545px, #FFFFFF 157px
+ #111518 80%, #FFFFFF 20%
  )
     
 
 }
+.container-problems {padding-left: 15px;
+    padding-right: 15px;}
+@media screen and (min-width: 480px)
+{.container-problems {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }} 
 .problems-title {font-family:'Monserrat';
     
     color: #FFFFFF;}
@@ -12,8 +21,12 @@ background-image: linear-gradient(to bottom,
     @media screen and (min-width: 480px)
     {.problems-title 
         
-        {padding: 20px 24px;
+        {padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 24px;
             font-size: 24px;
+            line-height: 120%;
+            text-align:justify;
             
            }}
     
@@ -25,15 +38,8 @@ background-image: linear-gradient(to bottom,
     padding-right: 168px;
 
 }}
-.container-problems {padding-left: 15px;
-padding-right: 15px;}
-@media screen and (min-width: 480px)
-{.container-problems {
-        width: 480px;
-        margin-left: 25%;
-        margin-right: auto;
-        
-    }} 
+
+
 
 
 
@@ -45,7 +51,6 @@ padding-right: 15px;}
         }}
         @media screen and (min-width: 1680px)
 {.container-problems {
-
     width:1680px;  
 }}
 @media screen and (min-width: 1680px) {
@@ -65,13 +70,16 @@ padding-right: 15px;}
         @media screen and (min-width: 480px){
         .container-wrap {
             width:480px;
-            margin-left:auto ;
+            margin-left: auto ;
             margin-right: auto;
-                position: relative;
-                bottom:-32px;
+                padding-left: 32px;
+                padding-right:24px;
+                padding-top: 20px;
+                padding-bottom: 24px;
                 box-shadow: -5px 8px 26px
                 rgba(0, 0, 0, 0.04);
-                z-index: 2;
+                background-color: #FFFFFF;
+                
              }}
                 @media screen and (min-width: 768px)
     {.container-wrap 
@@ -82,7 +90,6 @@ padding-right: 15px;}
             padding-right:112px;
         padding-bottom: 40px;
         position: relative;
-       bottom: -32px;
         box-shadow: -5px 8px 26px
         rgba(0, 0, 0, 0.04); 
     }
@@ -94,7 +101,7 @@ padding-right: 15px;}
         padding-left:140px; 
     padding-right:32px ;
     padding-bottom:-60px;
-    position: absolute;
+   
     bottom: 0;
     left: 0;
     height:354px;
@@ -107,12 +114,10 @@ padding-right: 15px;}
 
     @media screen and (min-width: 480px)
    
-        {.list-problems-item {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 60px;
+        {.list-problems-item:not(:last-child) {margin-bottom: 16px;
+          justify-content: center; 
         
-            counter-reset: section;
+            
         } }
         @media screen and (min-width: 768px) {.list-problems-item {
             grid-template-columns: repeat(2, 1fr);
@@ -129,6 +134,7 @@ padding-right: 15px;}
 
     ol {
         counter-reset: section;
+        margin-bottom: 5px;
         }
         .list-problems-item {
         list-style-type: none;
@@ -155,8 +161,10 @@ padding-right: 15px;}
             counter-increment: section;
             content:"-" counter(section) "";
             position: absolute;
-            top: -30px;}
-        }
+            top: -30px;}}
+            @media screen and (min-width: 480px) 
+            {li::before:not(:last-child) {margin-bottom: 30px; 
+        }}
         @media screen and (min-width: 768px)
         {li::before 
             

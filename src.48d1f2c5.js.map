@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;AAEA,aAFA,QAAA,oBACA,QAAA,aACA,QAAA","file":"src.48d1f2c5.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss';\nimport './js/menu';\nimport './js/script';\n"]}

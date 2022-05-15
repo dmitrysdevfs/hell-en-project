@@ -124,7 +124,7 @@
     margin-right: auto;
     width: 208px;
     min-height: 178px;
-    background-image: url(../../src/images/hero_img/mobile/heder-img.png);
+    background-image: url(../../src/images/hero_img/mobile/hero-img.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,31 +133,31 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../src/images/hero_img/mobile/heder-img@2x.png);
+        background-image: url(../../src/images/hero_img/mobile/hero-img@2x.png);
 
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url(../../src/images/hero_img/tablet/heder-img.png);
+        background-image: url(../../src/images/hero_img/tablet/hero-img.png);
         width: 375px;
         height: 320px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../src/images/hero_img/tablet/heder-img@2x.png);
+            background-image: url(../../src/images/hero_img/tablet/hero-img@2x.png);
         }
     }
 
     @media screen and (min-width: 1680px) {
-        background-image: url(../../src/images/hero_img/desktop/heder-img.png);
+        background-image: url(../../src/images/hero_img/desktop/hero-img.png);
         width: 840px;
         height: 718px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../src/images/hero_img/desktop/heder-img@2x.png);
+            background-image: url(../../src/images/hero_img/desktop/hero-img@2x.png);
         }
     }
 

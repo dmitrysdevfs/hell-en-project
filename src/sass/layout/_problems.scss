@@ -8,44 +8,49 @@ background-image: linear-gradient(to bottom,
 
 }
 .problems-title {font-family:'Monserrat';
-    font-size: 46px;
-    font-weight: 800;
-    line-height: 1.30;
-    letter-spacing: 0.03em;
+    
     color: #FFFFFF;}
 
-    .problems-title { 
-        @media screen and (min-width: 480px)
+    @media screen and (min-width: 480px)
+    {.problems-title 
+        
         {padding: 20px 24px;
             font-size: 24px;
             justify-content: center;
            }}
     
-  
-   .problems-title {
-   @media screen and (min-width: 768px)
-   {padding-left:32px;
+           @media screen and (min-width: 768px)
+   {.problems-title {
+   
+   padding-left:32px;
     padding-top: 40px;
     padding-right: 168px;
 
 }}
-
-   .problems-title {
-    @media screen and (min-width: 1680px) {padding-left: 16px;
-        padding-right:  198px;}
+@media screen and (min-width: 1680px) {
+   .problems-title 
+    {padding-left: 16px;
+        padding-right:  198px;
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.30;
+        letter-spacing: 0.03em}
 }
 .accent {color: var(--accent-color);
     }
+    @media screen and (min-width: 480px){
     .container-wrap {
-        @media screen and (min-width: 480px)
-        {padding: 24px 20px 23px 32px;
+        
+        padding: 24px 20px 23px 32px;
            
             position: relative;
             z-index: 2;
             box-shadow: -5px 8px 26px
             rgba(0, 0, 0, 0.04); }}
-.container-wrap {
- @media screen and (min-width: 768px)
+            
+            @media screen and (min-width: 768px)
+{.container-wrap 
+ 
  
      {padding-top: 40px;
         padding-left: 92px;
@@ -56,10 +61,10 @@ background-image: linear-gradient(to bottom,
     box-shadow: -5px 8px 26px
     rgba(0, 0, 0, 0.04); 
 }
-     }
-    
-    .container-wrap {
-    @media screen and (min-width: 1680px)
+}
+@media screen and (min-width: 1680px)
+    {.container-wrap 
+   
     {padding-top: 60px;
     padding-left:140px; 
 padding-right:32px ;
@@ -70,10 +75,10 @@ box-shadow: -5px 8px 26px
 rgba(0, 0, 0, 0.04); }
     }
    
-
-.container-problems {
-@media screen and (min-width: 480px) 
-     {
+    @media screen and (min-width: 480px)
+{.container-problems {
+ 
+     
         width: 480px;
         max-width: 100%;
         margin-left: auto;
@@ -84,44 +89,50 @@ height: 692px;
 
 
 }
-.container-problems {
-    @media screen and (min-width: 768px) 
+@media screen and (min-width: 768px) 
+{.container-problems 
+    
          {
             width: 768px;
             max-width: 100%;
             padding-left: 32px;
             padding-right: 168px;
         }}
-.container-problems {
-@media screen and (min-width: 1680px)
-    {width: 1680px;
+        @media screen and (min-width: 1680px)
+{.container-problems {
+
+    width: 1680px;
         max-width: 100%;
     padding-left:16px; 
 padding-right:168px ;
 padding-bottom: 20px;
 }}
-.card-set {
-    @media screen and (min-width: 768px) {display:flex;
+@media screen and (min-width: 768px)
+{.card-set 
+    {display:flex;
     flex-wrap: wrap;
     margin-left:-162px;
     margin-top:-81px;  
     } }
-.card-set {
-    @media screen and (min-width: 1680px) {display:flex;
+    @media screen and (min-width: 1680px)  
+{.card-set 
+  {display:flex;
     flex-wrap: wrap;
     margin-left:0;
     margin-top:0;  
     } }
-    .list-problems-item {
-        @media screen and (min-width: 768px)
+    @media screen and (min-width: 768px)
+    {.list-problems-item 
+       
        {flex-basis: calc(100%  / 2);
        position: relative;
        justify-content: space-between;
        font-size: 14px;
        line-height: 1.43;
-    }}  
-.list-problems-item {
-     @media screen and (min-width: 1680px)
+    }} 
+    @media screen and (min-width: 1680px)   
+{.list-problems-item 
+     
     {flex-basis: calc(100%  / 3);
     position: relative;
 padding-left:140px ;
@@ -130,9 +141,9 @@ max-width: 100%;
 font-size: 20px ;
 line-height: 1.2;
 }}
-
-.list-problems-item{
 @media screen and (min-width: 480px)
+{.list-problems-item
+
 {margin-bottom: 45px;
 font-size: 14px;
 line-height: 1.71;
@@ -165,19 +176,20 @@ ol {
   
    
     }
+    @media screen and (min-width: 480px)  
+{li::before {
    
-li::before {
-    @media screen and (min-width: 480px)
         
     
-{
+
     counter-increment: section;
     content:"-" counter(section) "";
     position: absolute;
     top: -30px;}
 }
-li::before {
-    @media screen and (min-width: 768px)
+@media screen and (min-width: 768px)
+{li::before 
+    
         
     
 {

@@ -1,6 +1,6 @@
 .problems {
     background-image: linear-gradient(to bottom, 
-      #111518 80%, #FFFFFF 20%);
+      #111518 80%, #FFFFFF 20%); 
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -18,6 +18,8 @@
   @media screen and (min-width: 1680px) {
     .container-problems {
     padding-top: 80px;
+    background-image: url("../images/problems-fire.svg");
+    background-repeat: no-repeat; background-position: top right; background-size: contain;
     }
   }
   

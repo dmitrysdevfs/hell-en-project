@@ -1,78 +1,53 @@
+.logo {
+  color: var(--add-textcolor);
+}
+
+.mobile-menu .logo {
+  color: #ffffff;
+}
+
+.logo__top-part {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
 .logo__bottom-part {
-    padding-top: 4px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 6px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #FF6B09;
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
-.logo__top-part_wrapper {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    color: #111518;
-}
+@media screen and (max-width: 767px) {
+  .logo__top-part {
+    font-size: 18px;
+  }
 
-.text-accent {
-    color: black;
-}
+  .logo__fire-icon {
+    width: 18px;
+    height: 24px;
+  }
 
-// Лого для бургер-меню
-
-.mobile-menu-logo__top-part {
-    position: absolute;
-    top: 24px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    color: white;
-}
-
-.mobile-menu-logo__bottom-part {
-    position: absolute;
-    top: 58px;
-    padding-top: 4px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 6px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #FF6B09;
-}
-
-.mobile-menu__text-accent {
-    color: white;
+  .logo__bottom-part {
+    font-size: 5px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .logo__top-part_wrapper {
-        font-size: 24px;
-    }
+  .logo__top-part {
+    font-size: 28px;
+  }
 
-    .mobile-menu-logo__top-part {
-        font-size: 26px;
-        top: 40px;
-    }
+  .logo__fire-icon {
+    width: 26px;
+    height: 34px;
+  }
 
-    .mobile-menu-logo__bottom-part {
-        top: 75px;
-    }
-}
-
-@media screen and (min-width: 1680px) {
-    .logo__top-part_wrapper {
-        font-size: 26px;
-    }
+  .logo__bottom-part {
+    font-size: 8px;
+  }
 }

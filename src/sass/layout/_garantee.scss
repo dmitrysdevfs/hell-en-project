@@ -16,7 +16,7 @@
     content: '';
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url('../../src/images/icon-fire.svg'), linear-gradient(#f1f1ef, #f1f1ef);
+    background-image: url('../images/icon-fire.svg'), linear-gradient(#f1f1ef, #f1f1ef);
   }
 
   &:not(:last-child) {

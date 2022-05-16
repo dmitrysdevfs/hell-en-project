@@ -17,8 +17,7 @@ color:var(--add-textcolor);
   margin-left: auto;
   margin-right: auto;
   padding-top: 32px;
-  width: 280px;
-  min-height: 280px;
+
   background-color: #FFFFFF;
   color: tomato;
   fill: var(--accent-color);
@@ -85,8 +84,12 @@ color:var(--add-textcolor);
   width: 258px;
 }
 @media screen and (max-width: 767px) {
-  .hwd-list__item:not(:last-child) {
-    margin-bottom: 16px;
+  .hwd-list__item {
+    width: 280px;
+    min-height: 280px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
   }
 }
 
@@ -128,6 +131,7 @@ color:var(--add-textcolor);
     width: 736px;
   }
   .hwd-list__item {
+    flex-basis: calc((100% - 64px) / 2);
       &:not(:nth-child(-n+2)) {
         margin-top: 24px;
         }

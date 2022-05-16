@@ -66,6 +66,10 @@
     font-size: 12px;
     line-height: 1.67;
     color: var(--accent-color);
+    transition: color 250ms var(--timing-fun);
+    &:hover, &:focus {
+        color: var(--add-textcolor);
+    }
 }
 @media screen and (min-width:768px) {
     .about__wrapper {

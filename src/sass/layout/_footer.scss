@@ -38,9 +38,11 @@
     flex-direction: column;
   }
 
-  .logo-footer {
+  .footer .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
-    text-align: center;
   }
 
   .phone {

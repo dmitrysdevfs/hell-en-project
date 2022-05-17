@@ -10,9 +10,10 @@ $(document).ready(function () {
         asNavFor: ".slider-pagination"
     });
     $('.slider-pagination').slick({
-        infinite:false,
+        infinite:true,
         asNavFor: ".slider",
-        variableWidth: true,
-        slidesToShow: 3
+        slidesToShow: 3,
+        centerMode:true,
+        variableWidth:true
     });
 });

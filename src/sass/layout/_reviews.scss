@@ -1,31 +1,42 @@
 .reviews {
     padding-top: 40px;
     padding-bottom: 40px;
+    @media screen and (min-width:1680px) {
+     padding-top: 80px;
+    padding-bottom: 80px;
+    }
 }
 .reviews .section-title {
     text-align: center;
-    margin-bottom: 24px;
+     @media screen and (max-width:767px) {
+         margin-bottom: 12px; 
+    } 
 }
 .article {
     @media screen and (max-width:767px) {
-        padding: 0 20px;   
-        margin-bottom: 40px;
+        padding: 12px 20px 15px 20px;   
     } 
     @media screen and (min-width:768px) {
         display: flex; 
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 56px;
         width: 704px;
     }
     @media screen and (min-width:1680px) {
         padding-top: 60px;
         padding-left: 80px;
-        padding-bottom: 60px;
+        padding-bottom: 55px;
     }
 }
 .slider__icon {
     display: block;
     margin: 0 auto;
+    fill: #436EAB;
+    transition: fill 250ms var(--timing-fun);
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+  }
 }
 .thumb-review {
     text-align: center;
@@ -51,15 +62,32 @@
     }
 }
 .thumb-photo img {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     width: 90px;
     @media screen and (min-width:768px) {
-        margin-bottom: 8px;   
+        margin-bottom: 10px;   
         width: 150px;
     }
+    @media screen and (min-width:1680px) {
+        margin-bottom: -2px;   
+    }
 }
-.slider__icon {
-    margin-bottom: 24px;
+.thumb-photo .link {
+     display: flex;
+    justify-content: center;
+     align-items: center;
+     margin-bottom: 24px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     transition: background-color 250ms var(--timing-fun);
+    &:hover,
+     &:focus {
+     background-color: #436EAB;
+    }
+     @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
 .review__student {
     margin-bottom: 16px;
@@ -79,7 +107,6 @@
         line-height: 1.23;   
     }
 }
-
 .review__student_education {
     margin-bottom: 16px;
     font-weight: 500;
@@ -148,11 +175,20 @@
 }
 .slider {
     width: 280px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+     margin-bottom: var(--margin-bottom);
     position: relative;
     @media screen and (min-width:768px) {
         width: 704px;
-        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+    @media screen and (min-width:768px) and (max-width:1679px) {
+        cursor: pointer;
+     transition: box-shadow 250ms var(--timing-fun); 
+        &:hover, &:focus {
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.09);   
+        }   
     }
     @media screen and (min-width:1680px) {
         width: 1203px;
@@ -179,13 +215,25 @@
 .slider .slick-list {
     width: 280px;
     margin: 0 auto;
+    cursor: pointer;
+         transition: box-shadow 250ms var(--timing-fun); 
+        &:hover, &:focus {
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.09);   
+        }
     @media screen and (min-width:768px) { 
         position: relative;
         width: 596px;
+        margin-bottom: 35px;
     }   
     @media screen and (min-width:1680px) { 
         width: 1088px;
+         margin-bottom: 40px;
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+        cursor: pointer;
+         transition: box-shadow 250ms var(--timing-fun); 
+        &:hover, &:focus {
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.09);   
+        }
     }   
 }
 .slider-pagination .slick-list {
@@ -195,7 +243,13 @@
     @media screen and (min-width:768px) { 
         width: 582px;
     } 
+    @media screen and (min-width:768px) { 
+       
+    } 
 }
+//  .slick-active.slick-current .slider-pagination__item {
+// border: 2px solid var(--accent-color);
+// }
 .slider .slick-arrow, .slider-pagination .slick-arrow {
     position: absolute;
     top: 50%;
@@ -205,6 +259,7 @@
     width: 27px;
     height: 16px;
     border: none;
+    cursor: pointer;
 }
 .slider .slick-arrow.slick-prev, .slider-pagination .slick-arrow.slick-prev {
     left: 0;

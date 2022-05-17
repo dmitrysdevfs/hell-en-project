@@ -216,10 +216,12 @@
     width: 280px;
     margin: 0 auto;
     cursor: pointer;
-         transition: box-shadow 250ms var(--timing-fun); 
+    @media screen and (max-width:767px) { 
+     transition: box-shadow 250ms var(--timing-fun); 
         &:hover, &:focus {
           box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.09);   
         }
+    }  
     @media screen and (min-width:768px) { 
         position: relative;
         width: 596px;

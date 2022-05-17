@@ -1,6 +1,13 @@
+.about {
+    padding-top: 40px;
+  @media  screen and (min-width:1680px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }  
+}
 .about .section-title {
-    margin-top: 200px;
-    margin-bottom: var(--margin-bottom);
+     margin-bottom: var(--margin-bottom);
+    margin-top: 200px; 
 }
 .about__name {
     padding-bottom: 8px;

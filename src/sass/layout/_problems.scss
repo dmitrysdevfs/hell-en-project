@@ -57,7 +57,7 @@
     min-width: 280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 33px 24px 32px;
+    padding: 20px;
     background-color: #ffffff;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
@@ -81,21 +81,21 @@
   @media screen and (min-width: 768px) {
     .container-wrap {
       width: 688px;
-      padding: 60px 143px 32px 80px;
+      padding: 40px 80px 40px 60px;
     }
   }
   
   @media screen and (min-width: 1680px) {
     .container-wrap {
       width: 1648px; 
-      padding: 60px 192px 60px 140px;
+      padding: 60px 0 60px 0;
     }
   } 
   
   
   @media screen and (max-width: 767px) {
     .list-problems-item:not(:last-child) {
-      margin-bottom: 46px;
+      margin-bottom: 44px;
     }
   }
   
@@ -103,14 +103,14 @@
     .problem .card-set {
       display:flex;
       flex-wrap: wrap;
-      margin-left:-80px;
-      margin-top:-80px;
+      margin-left:-32px;
+      margin-top:-32px;
     }
   
     .list-problems-item {
-      width: calc((100% - 160px) / 2);
-      margin-left: 80px;
-      margin-top: 80px;
+      width: calc((100% - 64px) / 2);
+      margin-left: 32px;
+      margin-top: 32px;
       justify-content: flex-start;
     }
     .list-problems-item::before {
@@ -129,14 +129,14 @@
   
   @media screen and (min-width: 1680px) {
     .problem .card-set {
-      margin-left:-140px;
-      margin-top:-140px;
+      margin-left:-222px;
+      margin-top:-40px;
     }
     .list-problems-item {
       width: 336px;
-      flex-basis: calc((100% - 420px) / 3);
-      margin-left: 140px;
-      margin-top: 140px;
+      flex-basis: calc((100% - 666px) / 3);
+      margin-left: 222px;
+      margin-top: 40px;
       justify-content: flex-start;
     }
   }

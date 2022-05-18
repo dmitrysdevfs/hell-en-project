@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.slider').slick({
         speed: 750,
-        infinite:false,
+        infinite:true,
         waitForAnimate: false,
         centerMode: true,
         fade: true,

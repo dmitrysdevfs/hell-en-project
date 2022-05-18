@@ -57,22 +57,31 @@
     min-width: 280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 32px 24px 32px;
+    padding: 50px 33px 24px 32px;
     background-color: #ffffff;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
   
   @media screen and (min-width: 480px) {
     .container-wrap {
-      width:450px;
-      
+      width: 280px; 
+    }
+    .list-problems-item::before {
+      counter-increment: section;
+      content:"— 0" counter(section) "";
+      position: absolute;
+      top: -30px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      color: #FF6B09;
     }
   }
   
   @media screen and (min-width: 768px) {
     .container-wrap {
-      width: 706px;
-      padding: 60px 140px 32px 80px;
+      width: 688px;
+      padding: 60px 143px 32px 80px;
     }
   }
   
@@ -94,15 +103,25 @@
     .card-set {
       display:flex;
       flex-wrap: wrap;
-      margin-left:-35px;
-      margin-top:-35px;
+      margin-left:-80px;
+      margin-top:-80px;
     }
   
     .list-problems-item {
-      width: calc((100% - 70px) / 2);
-      margin-left: 35px;
-      margin-top: 35px;
+      width: calc((100% - 160px) / 2);
+      margin-left: 80px;
+      margin-top: 80px;
       justify-content: flex-start;
+    }
+    .list-problems-item::before {
+      counter-increment: section;
+      content:"— 0" counter(section) "";
+      position: absolute;
+      top: -30px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      color: #FF6B09;
     }
   }
   
@@ -128,12 +147,11 @@
   
   .list-problems-item {
     position: relative;
-    min-width: 224px;
     list-style-type: none;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.42;
     letter-spacing: 0.08em;
     color: #111518;
   } 
@@ -144,7 +162,7 @@
     position: absolute;
     top: -30px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.08em;
     color: #FF6B09;
   }

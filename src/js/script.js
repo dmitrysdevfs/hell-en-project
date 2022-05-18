@@ -2,7 +2,6 @@ $(document).ready(function () {
     $('.slider').slick({
         speed: 750,
         infinite:false,
-        initialSlide: 5,
         waitForAnimate: false,
         centerMode: true,
         fade: true,
@@ -12,7 +11,6 @@ $(document).ready(function () {
     $('.slider-pagination').slick({
         infinite:true,
         asNavFor: ".slider",
-        slidesToShow: 3,
         centerMode:true,
         variableWidth:true
     });

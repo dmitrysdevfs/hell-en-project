@@ -1,39 +1,89 @@
-
 .benefits {
-    padding-left: 15px;
-    padding-right: 15px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: linear-gradient(to bottom,
+        #111518 50%, #FFFFFF 50%);
 }
 .container-benefits {
-    min-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px 24px 20px;
-    background-color: #ffffff;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  position: relative;
+  padding-top: 40px;
+  // z-index: 2;
+  // min-width: 280px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding: 20px 0 24px 20px;
   
+  // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
+    @media screen and (max-width: 767px) {
+    .benefits-title {
+      max-width: 180px;
+      text-align: left;
+      margin-bottom: 32px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 136%;
+      letter-spacing: 0.03em;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    min-width: 180px;
+    font-size: 26px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .benefits-title {
+    display: none;
+  }
+}
+
   
+    .benefits-wrap {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px 33px 24px 32px;
+      background-color: #ffffff;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+
+
   @media screen and (min-width: 480px) {
-    .container-benefits {
-      width:450px;
-      
+    .benefits-description {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 143%;
+      align-items: center;
+      letter-spacing: 0.08em;
     }
   }
   
   @media screen and (min-width: 768px) {
-    .container-benefits {
+    .benefits-wrap {
       width: 706px;
-      padding: 60px 140px 32px 80px;
+      padding: 70px 90px 40px 90px;
     }
   }
   
   @media screen and (min-width: 1680px) {
-    .container-benefits {
-      width: 1648px; 
+    .benefits-wrap {
+      position: relative;
+      z-index: 3;
+      width: 1680px; 
       padding: 60px 192px 60px 140px;
     }
   } 
   
+  @media screen and (max-width: 1679px) {
+    .visually-hidden {
+      display:contents;
+    }
+  }
   
   @media screen and (max-width: 767px) {
     .list-benefits-item:not(:last-child) {
@@ -59,7 +109,7 @@
   }
   
   @media screen and (min-width: 768px) {
-    .card-set {
+    .benefits .card-set {
       display:flex;
       flex-wrap: wrap;
       margin-left:-35px;
@@ -88,7 +138,7 @@
   }
   
   @media screen and (min-width: 1680px) {
-    .card-set {
+    .benefits .card-set {
       margin-left:-140px;
       margin-top:-140px;
     }

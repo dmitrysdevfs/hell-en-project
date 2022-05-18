@@ -11,17 +11,7 @@
     background-position: right 0px bottom -50px;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0;
-    animation: ani 2.5s forwards;
-     @keyframes ani {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
-    }
+
 
     @media screen and (max-width: 767px){
     padding-bottom: 60px;

@@ -108,7 +108,8 @@
     }
   
     .list-problems-item {
-      width: calc((100% - 64px) / 2);
+      width: 206px;
+      flex-basis: calc((100% - 64px) / 2);
       margin-left: 32px;
       margin-top: 32px;
       justify-content: flex-start;

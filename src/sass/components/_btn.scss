@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 280px;
     height: 48px;
     background-color: var(--accent-color);
     color: #FFFFFF;
@@ -14,30 +13,34 @@
     text-transform: uppercase;
     padding: 14px 0px;
     transition: 0.2s ease;
-
-    &:hover,
-    &:focus{
-        box-shadow: 0 10px 10px -10px black, 0 -10px 10px -10px black;
-    }
-    @media screen and (min-width: 480px) and (max-width: 767px){
-        margin-right: auto;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1679px) {
-        width: 260px;
-        
-    }
     @media screen and (min-width: 1680px){
         font-size: var(--primary-font-size);
         line-height: 1.21;
         letter-spacing: 0.13em;
         padding: 26px 70px;
-        min-width: 355px;
         height: 70px;
     }
 }
 
 .accent-btn--hero-retreat {
+     max-width: 280px;
+
+    &:hover,
+    &:focus {
+    box-shadow: 0 10px 10px -10px black, 0 -10px 10px -10px black;
+    }
     @media screen and (max-width: 767px){
     margin-bottom: 40px;
     }
-}
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-right: auto;
+    }
+    
+     @media screen and (min-width: 768px) and (max-width: 1679px) {
+        width: 260px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        min-width: 355px;
+    } 
+}      

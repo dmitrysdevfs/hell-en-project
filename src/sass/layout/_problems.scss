@@ -54,7 +54,7 @@
   } 
   
   .container-wrap {
-    min-width: 280px;
+    width: 280px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -63,8 +63,8 @@
   }
   
   @media screen and (min-width: 480px) {
-    .container-wrap {
-      width: 280px; 
+//     .container-wrap {
+//       width: 280px; 
     }
     .list-problems-item::before {
       counter-increment: section;
@@ -100,7 +100,7 @@
   }
   
   @media screen and (min-width: 768px) {
-    .problem .card-set {
+    .problem + .card-set {
       display:flex;
       flex-wrap: wrap;
       margin-left:-32px;

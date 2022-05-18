@@ -32,7 +32,7 @@
 .our-program {
     background: #111518;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     // margin-bottom: -200px;
     // overflow-x: hidden;
 
@@ -43,7 +43,7 @@
 
     @media screen and (min-width: 1680px) {
         padding-top: 80px;
-        padding-bottom: 300px;
+        padding-bottom: 210px;
     }
 }
 
@@ -312,7 +312,8 @@
     width: 176px;
     height: 137px;
     position: absolute;
-    transform: translate(50%, 500%);
+    z-index: 3;
+    transform: translate(50%, 490%);
     // left: 170px;
     background-image: url(/images/program-img-mob-min.png);
     background-repeat: no-repeat;
